@@ -1,7 +1,24 @@
-header{
-    background-color: aliceblue;    
-    height: 70vh;   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+html{
+    font-family: sans-serif;
+}
+
+header{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.653),rgba(53, 53, 60, 0.677)),
+    url("./assets/headerbg.jpg");
+    background-size: cover;   /*for an image to have 100% of width and height of parent*/
+    background-position: center; /* to make i*/
+    background-attachment: fixed;
+    height: 70vh;   
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
 
 li{
     list-style: none;
@@ -9,4 +26,40 @@ li{
 
 a{
     text-decoration: none;
+}
+
+.btn{
+    /* font-size: 2rem; */
+    display: inline-block;
+    color: white;
+    background-color: #f63854;
+    padding: 16px 12px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid #f63854;
+    transition: transform 0.3s;
+}
+
+.btn_empty{
+    color: #f63854;
+    background-color: transparent;  
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+nav>ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:start;
+}
+
+li>a{
+    color: #f63854;
+}
+
+h1{
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-align: center;
 }
